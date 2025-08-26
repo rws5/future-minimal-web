@@ -7,7 +7,7 @@ export default function Logo() {
           <img 
             src="/lovable-uploads/b89fc86f-16f2-494b-aba0-3939986a8bdc.png" 
             alt="Logo"
-            className="w-full h-full object-contain"
+            className="w-full h-full object-contain bg-black"
           />
         </div>
         
