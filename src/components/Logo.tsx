@@ -1,5 +1,3 @@
-import planetLogo from '@/assets/planet-logo.png';
-
 export default function Logo() {
   return (
     <div className="fixed top-6 left-6 z-50">
@@ -7,8 +5,8 @@ export default function Logo() {
         {/* Logo Image */}
         <div className="relative w-14 h-14">
           <img 
-            src={planetLogo} 
-            alt="Planet Solutions Logo" 
+            src="/lovable-uploads/b89fc86f-16f2-494b-aba0-3939986a8bdc.png" 
+            alt="Logo"
             className="w-full h-full object-contain"
           />
         </div>
