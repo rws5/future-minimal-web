@@ -5,7 +5,7 @@ export default function Logo() {
         {/* Logo Image */}
         <div className="relative w-14 h-14">
           <img 
-            src="/lovable-uploads/b89fc86f-16f2-494b-aba0-3939986a8bdc.png" 
+            src="/lovable-uploads/650c2a24-b9b6-4297-b415-c17ddcc3b29b.png" 
             alt="Logo"
             className="w-full h-full object-contain bg-black"
           />
