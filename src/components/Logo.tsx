@@ -1,5 +1,3 @@
-import planetLogo from '@/assets/planet-logo.png';
-
 export default function Logo() {
   return (
     <div className="fixed top-6 left-6 z-50">
@@ -7,18 +5,10 @@ export default function Logo() {
         {/* Logo Image */}
         <div className="relative w-14 h-14">
           <img 
-            src={planetLogo} 
+            src="/lovable-uploads/02d3f2d3-7a39-4aa5-ad18-2b824126c716.png" 
             alt="Planet Solutions Logo" 
             className="w-full h-full object-contain"
           />
-        </div>
-        
-        {/* Logo Text */}
-        <div className="flex flex-col">
-          <span className="text-xl font-orbitron font-bold text-foreground">planet</span>
-          <span className="text-xs font-exo font-light text-muted-foreground tracking-[0.2em] uppercase">
-            s o l u t i o n s
-          </span>
         </div>
       </div>
     </div>
