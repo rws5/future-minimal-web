@@ -1,18 +1,18 @@
-import { Mail, Phone, MapPin, Github, Linkedin, Twitter, Facebook } from 'lucide-react';
+import { Mail, Phone, MapPin, Facebook, Instagram, MessageCircle } from 'lucide-react';
 export default function Footer() {
   const currentYear = new Date().getFullYear();
   const socialLinks = [{
-    icon: Github,
+    icon: Facebook,
     href: "#",
-    label: "GitHub"
+    label: "Facebook"
   }, {
-    icon: Linkedin,
+    icon: Instagram,
     href: "#",
-    label: "LinkedIn"
+    label: "Instagram"
   }, {
-    icon: Twitter,
+    icon: MessageCircle,
     href: "#",
-    label: "Twitter"
+    label: "WhatsApp"
   }];
   const quickLinks = [{
     label: "Início",
