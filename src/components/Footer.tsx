@@ -11,7 +11,7 @@ export default function Footer() {
     label: "Instagram"
   }, {
     icon: MessageCircle,
-    href: "#",
+    href: "https://wa.me/5584999212121",
     label: "WhatsApp"
   }];
   const quickLinks = [{
