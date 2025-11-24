@@ -200,9 +200,14 @@ export default function ContactSection() {
                   Respondemos em até 24 horas úteis. Para projetos urgentes, 
                   entre em contato diretamente pelo WhatsApp.
                 </p>
-                <button className="w-full py-3 border border-border/50 hover:border-primary/50 text-foreground font-exo rounded-xl transition-all duration-300 hover:bg-accent/20">
+                <a 
+                  href="https://wa.me/5584999212121" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="w-full py-3 border border-border/50 hover:border-primary/50 text-foreground font-exo rounded-xl transition-all duration-300 hover:bg-accent/20 flex items-center justify-center"
+                >
                   WhatsApp
-                </button>
+                </a>
               </div>
             </div>
           </div>
