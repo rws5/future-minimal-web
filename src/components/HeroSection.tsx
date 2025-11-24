@@ -45,7 +45,10 @@ export default function HeroSection() {
             <button className="px-8 py-4 bg-primary hover:bg-primary-glow text-primary-foreground font-orbitron font-semibold rounded-full glow-border transition-all duration-300 hover:scale-105">
               Descobrir Soluções
             </button>
-            <button className="px-8 py-4 border border-border hover:border-primary/50 text-foreground font-exo rounded-full transition-all duration-300 hover:bg-accent/20">
+            <button 
+              onClick={() => document.querySelector('#services')?.scrollIntoView({ behavior: 'smooth' })}
+              className="px-8 py-4 border border-border hover:border-primary/50 text-foreground font-exo rounded-full transition-all duration-300 hover:bg-accent/20"
+            >
               Nossos Serviços
             </button>
           </div>
