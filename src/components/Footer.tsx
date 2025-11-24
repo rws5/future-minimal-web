@@ -3,7 +3,7 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
   const socialLinks = [{
     icon: Facebook,
-    href: "#",
+    href: "https://www.facebook.com/planetsolutionnatal",
     label: "Facebook"
   }, {
     icon: Instagram,
@@ -60,7 +60,7 @@ export default function Footer() {
               
               {/* Social Links */}
               <div className="flex space-x-4">
-                {socialLinks.map((social, index) => <a key={index} href={social.href} className="w-10 h-10 bg-secondary/20 hover:bg-primary/20 border border-border/30 hover:border-primary/50 rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110 group" aria-label={social.label}>
+                {socialLinks.map((social, index) => <a key={index} href={social.href} target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-secondary/20 hover:bg-primary/20 border border-border/30 hover:border-primary/50 rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110 group" aria-label={social.label}>
                     <social.icon className="w-5 h-5 text-muted-foreground group-hover:text-primary transition-colors" />
                   </a>)}
               </div>
