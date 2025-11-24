@@ -37,12 +37,13 @@ export default function Footer() {
             {/* Brand Section */}
             <div className="lg:col-span-2">
               <div className="flex items-center space-x-3 mb-6">
-                {/* Logo Symbol */}
+                {/* Logo Image */}
                 <div className="relative w-10 h-10">
-                  <div className="absolute inset-0 border-2 border-muted-foreground/30 rounded-full"></div>
-                  <div className="absolute top-0.5 left-0.5 w-3 h-3 border-2 border-muted-foreground/50 rounded-full border-r-transparent border-b-transparent rotate-45"></div>
-                  <div className="absolute top-1 left-1 w-5 h-5 border-2 border-muted-foreground/70 rounded-full border-r-transparent border-b-transparent rotate-12"></div>
-                  <div className="absolute top-0.5 right-0.5 w-1.5 h-5 bg-primary rounded-full transform rotate-12"></div>
+                  <img 
+                    src="/lovable-uploads/650c2a24-b9b6-4297-b415-c17ddcc3b29b.png" 
+                    alt="Planet Solutions Logo"
+                    className="w-full h-full object-contain"
+                  />
                 </div>
                 
                 <div className="flex flex-col">
