@@ -1,24 +1,36 @@
 import { Mail, Phone, MapPin, Github, Linkedin, Twitter } from 'lucide-react';
-
 export default function Footer() {
   const currentYear = new Date().getFullYear();
-
-  const socialLinks = [
-    { icon: Github, href: "#", label: "GitHub" },
-    { icon: Linkedin, href: "#", label: "LinkedIn" },
-    { icon: Twitter, href: "#", label: "Twitter" }
-  ];
-
-  const quickLinks = [
-    { label: "Início", href: "#home" },
-    { label: "Sobre", href: "#about" },
-    { label: "Serviços", href: "#services" },
-    { label: "Soluções", href: "#solutions" },
-    { label: "Contato", href: "#contact" }
-  ];
-
-  return (
-    <footer className="bg-card/50 border-t border-border/30">
+  const socialLinks = [{
+    icon: Github,
+    href: "#",
+    label: "GitHub"
+  }, {
+    icon: Linkedin,
+    href: "#",
+    label: "LinkedIn"
+  }, {
+    icon: Twitter,
+    href: "#",
+    label: "Twitter"
+  }];
+  const quickLinks = [{
+    label: "Início",
+    href: "#home"
+  }, {
+    label: "Sobre",
+    href: "#about"
+  }, {
+    label: "Serviços",
+    href: "#services"
+  }, {
+    label: "Soluções",
+    href: "#solutions"
+  }, {
+    label: "Contato",
+    href: "#contact"
+  }];
+  return <footer className="bg-card/50 border-t border-border/30">
       <div className="container mx-auto px-6 py-12">
         <div className="max-w-6xl mx-auto">
           <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-8">
@@ -48,16 +60,9 @@ export default function Footer() {
               
               {/* Social Links */}
               <div className="flex space-x-4">
-                {socialLinks.map((social, index) => (
-                  <a
-                    key={index}
-                    href={social.href}
-                    className="w-10 h-10 bg-secondary/20 hover:bg-primary/20 border border-border/30 hover:border-primary/50 rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110 group"
-                    aria-label={social.label}
-                  >
+                {socialLinks.map((social, index) => <a key={index} href={social.href} className="w-10 h-10 bg-secondary/20 hover:bg-primary/20 border border-border/30 hover:border-primary/50 rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110 group" aria-label={social.label}>
                     <social.icon className="w-5 h-5 text-muted-foreground group-hover:text-primary transition-colors" />
-                  </a>
-                ))}
+                  </a>)}
               </div>
             </div>
             
@@ -67,15 +72,9 @@ export default function Footer() {
                 Links Rápidos
               </h3>
               <div className="space-y-3">
-                {quickLinks.map((link, index) => (
-                  <a
-                    key={index}
-                    href={link.href}
-                    className="block text-muted-foreground hover:text-primary font-exo transition-colors"
-                  >
+                {quickLinks.map((link, index) => <a key={index} href={link.href} className="block text-muted-foreground hover:text-primary font-exo transition-colors">
                     {link.label}
-                  </a>
-                ))}
+                  </a>)}
               </div>
             </div>
             
@@ -87,15 +86,15 @@ export default function Footer() {
               <div className="space-y-3">
                 <div className="flex items-center space-x-3 text-muted-foreground font-exo">
                   <Mail className="w-4 h-4 text-primary flex-shrink-0" />
-                  <span className="text-sm">contato@planetsolutions.com.br</span>
+                  <span className="text-sm">ricardo.wagner@planetsolution.net</span>
                 </div>
                 <div className="flex items-center space-x-3 text-muted-foreground font-exo">
                   <Phone className="w-4 h-4 text-primary flex-shrink-0" />
-                  <span className="text-sm">+55 (11) 9999-9999</span>
+                  <span className="text-sm">+55 (84) 99921-2121</span>
                 </div>
                 <div className="flex items-center space-x-3 text-muted-foreground font-exo">
                   <MapPin className="w-4 h-4 text-primary flex-shrink-0" />
-                  <span className="text-sm">São Paulo, SP - Brasil</span>
+                  <span className="text-sm">Natal, RN - Brasil</span>
                 </div>
               </div>
             </div>
@@ -120,6 +119,5 @@ export default function Footer() {
           </div>
         </div>
       </div>
-    </footer>
-  );
+    </footer>;
 }
