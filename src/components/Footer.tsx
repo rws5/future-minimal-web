@@ -7,7 +7,7 @@ export default function Footer() {
     label: "Facebook"
   }, {
     icon: Instagram,
-    href: "#",
+    href: "https://www.instagram.com/planetsolutions",
     label: "Instagram"
   }, {
     icon: MessageCircle,
