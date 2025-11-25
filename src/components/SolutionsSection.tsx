@@ -5,7 +5,7 @@ export default function SolutionsSection() {
     {
       icon: Building2,
       title: "Empresarial",
-      description: "ERPs, CRMs e sistemas de gestão empresarial completos",
+      description: "CFTVs, sistemas de controles de acesso completos",
       color: "from-blue-500/20 to-cyan-500/20"
     },
     {
