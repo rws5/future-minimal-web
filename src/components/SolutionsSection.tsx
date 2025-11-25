@@ -10,7 +10,7 @@ export default function SolutionsSection() {
     },
     {
       icon: ShoppingCart,
-      title: "E-commerce",
+      title: "Residencial",
       description: "Lojas virtuais modernas com integração de pagamentos",
       color: "from-green-500/20 to-emerald-500/20"
     },
