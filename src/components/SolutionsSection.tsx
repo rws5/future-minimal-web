@@ -17,7 +17,7 @@ export default function SolutionsSection() {
     {
       icon: Heart,
       title: "TI",
-      description: "Sistemas médicos e de gestão hospitalar",
+      description: "Soluções em Fibra Optica, Cabeamento Estruturado e Montagem de Estruturas",
       color: "from-red-500/20 to-pink-500/20"
     },
     {
