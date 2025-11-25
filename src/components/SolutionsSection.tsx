@@ -11,7 +11,7 @@ export default function SolutionsSection() {
     {
       icon: ShoppingCart,
       title: "Residencial",
-      description: "Lojas virtuais modernas com integração de pagamentos",
+      description: "Automação Residencial, Cortinas de Rolo, Fechaduras Inteligente",
       color: "from-green-500/20 to-emerald-500/20"
     },
     {
