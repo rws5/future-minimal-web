@@ -38,7 +38,7 @@ export default function ContactSection() {
     {
       icon: MapPin,
       title: "Localização",
-      value: "São Paulo, SP - Brasil",
+      value: "Natal, RN - Brasil",
       href: "#"
     }
   ];
