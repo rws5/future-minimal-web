@@ -27,14 +27,14 @@ jobs:
         run: ls -al dist/
 
       - name: Deploy FTP para Kinghost
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
           server: ${{ secrets.FTP_HOST }}
           port: 21
           username: ${{ secrets.FTP_USER }}
           password: ${{ secrets.FTP_PASS }}
           local-dir: dist/
-          server-dir: /www/planet/
+          server-dir: /www/
           dangerous-clean-slate: true
           dry-run: false
           log-level: verbose
