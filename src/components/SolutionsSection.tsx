@@ -16,7 +16,7 @@ export default function SolutionsSection() {
     },
     {
       icon: Heart,
-      title: "Saúde",
+      title: "TI",
       description: "Sistemas médicos e de gestão hospitalar",
       color: "from-red-500/20 to-pink-500/20"
     },
