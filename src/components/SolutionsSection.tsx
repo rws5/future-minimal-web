@@ -1,4 +1,4 @@
-import { Building2, ShoppingCart, Heart, GraduationCap, Truck, Users } from 'lucide-react';
+import { Building2, Home, Heart, GraduationCap, Truck, Users } from 'lucide-react';
 
 export default function SolutionsSection() {
   const solutions = [
@@ -9,7 +9,7 @@ export default function SolutionsSection() {
       color: "from-blue-500/20 to-cyan-500/20"
     },
     {
-      icon: ShoppingCart,
+      icon: Home,
       title: "Residencial",
       description: "Automação Residencial, Cortinas de Rolo, Fechaduras Inteligente",
       color: "from-green-500/20 to-emerald-500/20"
