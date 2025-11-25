@@ -32,8 +32,8 @@ export default function ContactSection() {
     {
       icon: Phone,
       title: "Telefone",
-      value: "+55 (11) 9999-9999",
-      href: "tel:+5511999999999"
+      value: "+55 (84) 99921-2121",
+      href: "tel:+5584999212121"
     },
     {
       icon: MapPin,
