@@ -1,4 +1,4 @@
-import { Building2, Home, Server, GraduationCap, Truck, Users } from 'lucide-react';
+import { Building2, Home, Server, Building, Truck, Users } from 'lucide-react';
 
 export default function SolutionsSection() {
   const solutions = [
@@ -21,7 +21,7 @@ export default function SolutionsSection() {
       color: "from-red-500/20 to-pink-500/20"
     },
     {
-      icon: GraduationCap,
+      icon: Building,
       title: "Condomínios",
       description: "Plataformas de ensino e gestão educacional",
       color: "from-purple-500/20 to-violet-500/20"
