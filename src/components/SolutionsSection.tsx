@@ -23,7 +23,7 @@ export default function SolutionsSection() {
     {
       icon: Building,
       title: "Condomínios",
-      description: "Plataformas de ensino e gestão educacional",
+      description: "Sistemas de gestão e controle de acesso",
       color: "from-purple-500/20 to-violet-500/20"
     },
     {
