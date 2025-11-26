@@ -10,7 +10,7 @@ export default function AboutSection() {
     description: "Aplicativos nativos e multiplataforma"
   }, {
     icon: Globe,
-    title: "Web",
+    title: "Automação",
     description: "Sites e sistemas web responsivos e modernos"
   }, {
     icon: Shield,
