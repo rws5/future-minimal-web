@@ -22,7 +22,7 @@ export default function SolutionsSection() {
     },
     {
       icon: GraduationCap,
-      title: "Educação",
+      title: "Condomínios",
       description: "Plataformas de ensino e gestão educacional",
       color: "from-purple-500/20 to-violet-500/20"
     },
