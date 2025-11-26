@@ -1,47 +1,37 @@
 import { Monitor, Smartphone, Cloud, Database, Cog, Zap } from 'lucide-react';
-
 export default function ServicesSection() {
-  const services = [
-    {
-      icon: Monitor,
-      title: "Desenvolvimento Web",
-      description: "Sites e aplicações web modernas, responsivas e otimizadas para performance.",
-      features: ["React & Next.js", "Node.js", "APIs RESTful", "SEO Otimizado"]
-    },
-    {
-      icon: Smartphone,
-      title: "Aplicativos Mobile",
-      description: "Apps nativos e híbridos para iOS e Android com design intuitivo.",
-      features: ["React Native", "Flutter", "iOS Nativo", "Android Nativo"]
-    },
-    {
-      icon: Cloud,
-      title: "Soluções Cloud",
-      description: "Infraestrutura em nuvem escalável e segura para seu negócio.",
-      features: ["AWS", "Google Cloud", "Azure", "DevOps"]
-    },
-    {
-      icon: Database,
-      title: "Banco de Dados",
-      description: "Arquitetura e otimização de bancos de dados para alta performance.",
-      features: ["PostgreSQL", "MongoDB", "Redis", "Data Analytics"]
-    },
-    {
-      icon: Cog,
-      title: "Automação",
-      description: "Automatização de processos e integração de sistemas empresariais.",
-      features: ["RPA", "Integrações", "Workflows", "APIs"]
-    },
-    {
-      icon: Zap,
-      title: "Consultoria Tech",
-      description: "Consultoria especializada em transformação digital e inovação.",
-      features: ["Arquitetura", "Code Review", "Performance", "Segurança"]
-    }
-  ];
-
-  return (
-    <section id="services" className="py-20">
+  const services = [{
+    icon: Monitor,
+    title: "Desenvolvimento Web",
+    description: "Sites e aplicações web modernas, responsivas e otimizadas para performance.",
+    features: ["React & Next.js", "Node.js", "APIs RESTful", "SEO Otimizado"]
+  }, {
+    icon: Smartphone,
+    title: "Aplicativos Mobile",
+    description: "Apps nativos e híbridos para iOS e Android com design intuitivo.",
+    features: ["React Native", "Flutter", "iOS Nativo", "Android Nativo"]
+  }, {
+    icon: Cloud,
+    title: "Soluções Cloud",
+    description: "Infraestrutura em nuvem escalável e segura para seu negócio.",
+    features: ["AWS", "Google Cloud", "Azure", "DevOps"]
+  }, {
+    icon: Database,
+    title: "Banco de Dados",
+    description: "Arquitetura e otimização de bancos de dados para alta performance.",
+    features: ["PostgreSQL", "MongoDB", "Redis", "Data Analytics"]
+  }, {
+    icon: Cog,
+    title: "Automação",
+    description: "Automatização de processos e integração de sistemas empresariais.",
+    features: ["RPA", "Integrações", "Workflows", "APIs"]
+  }, {
+    icon: Zap,
+    title: "Consultoria Tech",
+    description: "Consultoria especializada em transformação digital e inovação.",
+    features: ["Arquitetura", "Code Review", "Performance", "Segurança"]
+  }];
+  return <section id="services" className="py-20">
       <div className="container mx-auto px-6">
         <div className="max-w-6xl mx-auto">
           {/* Section Header */}
@@ -49,20 +39,14 @@ export default function ServicesSection() {
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-orbitron font-bold mb-6 glow-text">
               Nossos Serviços
             </h2>
-            <p className="text-lg text-muted-foreground font-exo max-w-3xl mx-auto leading-relaxed">
-              Oferecemos soluções completas em tecnologia, desde o desenvolvimento 
-              até a implementação e manutenção de sistemas robustos e escaláveis.
-            </p>
+            <p className="text-lg text-muted-foreground font-exo max-w-3xl mx-auto leading-relaxed">Oferecemos soluções completas em tecnologia, desde o automação residencial a câmeras de segurança até a instalação e manutenção de sistemas.</p>
           </div>
           
           {/* Services Grid */}
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {services.map((service, index) => (
-              <div 
-                key={index}
-                className="fade-in card-gradient p-8 rounded-2xl border border-border/30 hover:border-primary/50 transition-all duration-500 hover:shadow-glow group"
-                style={{ animationDelay: `${index * 0.15}s` }}
-              >
+            {services.map((service, index) => <div key={index} className="fade-in card-gradient p-8 rounded-2xl border border-border/30 hover:border-primary/50 transition-all duration-500 hover:shadow-glow group" style={{
+            animationDelay: `${index * 0.15}s`
+          }}>
                 {/* Icon */}
                 <div className="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-primary/20 group-hover:scale-110 transition-all duration-300">
                   <service.icon className="w-8 h-8 text-primary" />
@@ -79,15 +63,10 @@ export default function ServicesSection() {
                 
                 {/* Features List */}
                 <div className="space-y-2">
-                  {service.features.map((feature, featureIndex) => (
-                    <div 
-                      key={featureIndex}
-                      className="flex items-center space-x-2 text-sm text-muted-foreground/80 font-exo"
-                    >
+                  {service.features.map((feature, featureIndex) => <div key={featureIndex} className="flex items-center space-x-2 text-sm text-muted-foreground/80 font-exo">
                       <div className="w-1.5 h-1.5 bg-primary rounded-full"></div>
                       <span>{feature}</span>
-                    </div>
-                  ))}
+                    </div>)}
                 </div>
                 
                 {/* CTA */}
@@ -96,8 +75,7 @@ export default function ServicesSection() {
                     Saiba Mais
                   </button>
                 </div>
-              </div>
-            ))}
+              </div>)}
           </div>
           
           {/* Bottom CTA */}
@@ -117,6 +95,5 @@ export default function ServicesSection() {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 }
