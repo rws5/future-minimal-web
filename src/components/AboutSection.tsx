@@ -11,7 +11,7 @@ export default function AboutSection() {
   }, {
     icon: Globe,
     title: "Automação",
-    description: "Sites e sistemas web responsivos e modernos"
+    description: "Automação Residencial e controle de acesso"
   }, {
     icon: Shield,
     title: "Segurança",
