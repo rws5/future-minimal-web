@@ -1,4 +1,4 @@
-import { Building2, Home, Heart, GraduationCap, Truck, Users } from 'lucide-react';
+import { Building2, Home, Server, GraduationCap, Truck, Users } from 'lucide-react';
 
 export default function SolutionsSection() {
   const solutions = [
@@ -15,7 +15,7 @@ export default function SolutionsSection() {
       color: "from-green-500/20 to-emerald-500/20"
     },
     {
-      icon: Heart,
+      icon: Server,
       title: "TI",
       description: "Soluções em Fibra Optica, Cabeamento Estruturado e Montagem de Estruturas",
       color: "from-red-500/20 to-pink-500/20"
