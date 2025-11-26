@@ -1,31 +1,23 @@
 import { Code, Smartphone, Globe, Shield } from 'lucide-react';
-
 export default function AboutSection() {
-  const features = [
-    {
-      icon: Code,
-      title: "Desenvolvimento",
-      description: "Soluções em software sob medida para sua empresa"
-    },
-    {
-      icon: Smartphone,
-      title: "Mobile",
-      description: "Aplicativos nativos e multiplataforma"
-    },
-    {
-      icon: Globe,
-      title: "Web",
-      description: "Sites e sistemas web responsivos e modernos"
-    },
-    {
-      icon: Shield,
-      title: "Segurança",
-      description: "Proteção e confiabilidade em todas as soluções"
-    }
-  ];
-
-  return (
-    <section id="about" className="py-20 bg-card/30">
+  const features = [{
+    icon: Code,
+    title: "Desenvolvimento",
+    description: "Soluções em software sob medida para sua empresa"
+  }, {
+    icon: Smartphone,
+    title: "Mobile",
+    description: "Aplicativos nativos e multiplataforma"
+  }, {
+    icon: Globe,
+    title: "Web",
+    description: "Sites e sistemas web responsivos e modernos"
+  }, {
+    icon: Shield,
+    title: "Segurança",
+    description: "Proteção e confiabilidade em todas as soluções"
+  }];
+  return <section id="about" className="py-20 bg-card/30">
       <div className="container mx-auto px-6">
         <div className="max-w-6xl mx-auto">
           {/* Section Header */}
@@ -33,10 +25,7 @@ export default function AboutSection() {
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-orbitron font-bold mb-6 glow-text">
               Sobre a Planet Solutions
             </h2>
-            <p className="text-lg text-muted-foreground font-exo max-w-3xl mx-auto leading-relaxed">
-              Somos uma empresa de tecnologia especializada em desenvolver soluções 
-              inovadoras que transformam a forma como as empresas operam no mundo digital.
-            </p>
+            <p className="text-lg text-muted-foreground font-exo max-w-3xl mx-auto leading-relaxed">Somos uma empresa de tecnologia especializada em desenvolver soluções inovadoras em automação e segurança que transformam a forma como as empresas operam no mundo digital.</p>
           </div>
           
           {/* Main Content Grid */}
@@ -51,10 +40,7 @@ export default function AboutSection() {
                   Com anos de experiência no mercado de tecnologia, a Planet Solutions 
                   se destaca pela qualidade e inovação em cada projeto desenvolvido.
                 </p>
-                <p>
-                  Nossa missão é conectar empresas ao futuro através de soluções 
-                  tecnológicas que geram resultados reais e impacto positivo nos negócios.
-                </p>
+                <p>Nossa missão é conectar empresas ao futuro através de soluções tecnológicas que geram resultados reais e impacto positivo nos negócios e no lar.</p>
                 <p>
                   Utilizamos as mais modernas tecnologias e metodologias ágeis para 
                   entregar produtos de alta qualidade dentro do prazo estabelecido.
@@ -85,12 +71,9 @@ export default function AboutSection() {
           
           {/* Features Grid */}
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {features.map((feature, index) => (
-              <div 
-                key={index} 
-                className="fade-in card-gradient p-6 rounded-2xl border border-border/30 text-center hover:border-primary/30 transition-all duration-300 hover:shadow-glow group"
-                style={{ animationDelay: `${index * 0.2}s` }}
-              >
+            {features.map((feature, index) => <div key={index} className="fade-in card-gradient p-6 rounded-2xl border border-border/30 text-center hover:border-primary/30 transition-all duration-300 hover:shadow-glow group" style={{
+            animationDelay: `${index * 0.2}s`
+          }}>
                 <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-primary/20 transition-colors">
                   <feature.icon className="w-6 h-6 text-primary" />
                 </div>
@@ -100,11 +83,9 @@ export default function AboutSection() {
                 <p className="text-sm text-muted-foreground font-exo">
                   {feature.description}
                 </p>
-              </div>
-            ))}
+              </div>)}
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 }
