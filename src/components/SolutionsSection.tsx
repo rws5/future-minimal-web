@@ -27,12 +27,6 @@ export default function SolutionsSection() {
       color: "from-purple-500/20 to-violet-500/20"
     },
     {
-      icon: Truck,
-      title: "Logística",
-      description: "Sistemas de rastreamento e gestão de frotas",
-      color: "from-orange-500/20 to-yellow-500/20"
-    },
-    {
       icon: Users,
       title: "Social",
       description: "Redes sociais e plataformas colaborativas",
