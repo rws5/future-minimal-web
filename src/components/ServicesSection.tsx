@@ -88,9 +88,14 @@ export default function ServicesSection() {
                 Entre em contato conosco e descubra como podemos transformar suas ideias 
                 em soluções tecnológicas de impacto.
               </p>
-              <button className="px-10 py-4 bg-primary hover:bg-primary-glow text-primary-foreground font-orbitron font-semibold rounded-full glow-border transition-all duration-300 hover:scale-105">
+              <a 
+                href="https://wa.me/5584999212121" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="inline-block px-10 py-4 bg-primary hover:bg-primary-glow text-primary-foreground font-orbitron font-semibold rounded-full glow-border transition-all duration-300 hover:scale-105"
+              >
                 Iniciar Projeto
-              </button>
+              </a>
             </div>
           </div>
         </div>
