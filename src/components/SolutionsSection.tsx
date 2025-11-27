@@ -23,7 +23,7 @@ export default function SolutionsSection() {
     {
       icon: Building,
       title: "Condomínios",
-      description: "Sistemas de gestão e controle de acesso",
+      description: "Sistemas de gestão e controle de acesso com leitores facias, controles de placas de carros e outras soluções",
       color: "from-purple-500/20 to-violet-500/20"
     },
     {
