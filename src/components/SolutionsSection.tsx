@@ -81,7 +81,7 @@ export default function SolutionsSection() {
           </div>
           
           {/* Process Section */}
-          <div className="slide-in-right">
+          <div>
             <h3 className="text-2xl md:text-3xl font-orbitron font-bold text-center text-foreground mb-12">
               Nosso Processo de Desenvolvimento
             </h3>
