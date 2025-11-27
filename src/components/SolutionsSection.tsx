@@ -29,7 +29,7 @@ export default function SolutionsSection() {
     {
       icon: Users,
       title: "Social",
-      description: "Redes sociais e plataformas colaborativas",
+      description: "Criação de IA para atendimentos de redes socias",
       color: "from-indigo-500/20 to-blue-500/20"
     }
   ];
