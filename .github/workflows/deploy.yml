@@ -25,16 +25,16 @@ jobs:
 
       - name: Mostrar arquivos gerados
         run: ls -al dist/
-
-      - name: Deploy FTP para Kinghost
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+      - name: Deploy SSH Kinghost
+        uses: easingthemes/ssh-deploy@main
         with:
-          server: ${{ secrets.FTP_HOST }}
-          port: 21
-          username: ${{ secrets.FTP_USER }}
-          password: ${{ secrets.FTP_PASS }}
-          local-dir: dist/
-          server-dir: www/
-          dangerous-clean-slate: true
-          dry-run: false
-          log-level: verbose
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+          REMOTE_HOST: ${{ secrets.FTP_HOST }} # Hostname or IP of your server
+          REMOTE_USER: ${{ secrets.FTP_USER }} # User on the remote server
+          TARGET: /home/cenat/www # Target directory on the remote server
+          SOURCE: ./dist/ # Source directory to deploy (e.g., your build output)
+          ARGS: "-avz --delete" # Rsync arguments (e.g., archive, verbose, compress, delete extraneous files)
+          SCRIPT_AFTER: |
+              # Optional: Commands to run after deployment
+              echo "Deployment complete!"
+              sudo systemctl restart nginx # Example: Restart a service
