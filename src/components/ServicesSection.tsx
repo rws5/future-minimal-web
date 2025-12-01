@@ -1,4 +1,4 @@
-import { Monitor, Smartphone, Cloud, Database, Cog, Zap } from 'lucide-react';
+import { Monitor, Smartphone, Cloud, Database, Cog, Zap, Server } from 'lucide-react';
 export default function ServicesSection() {
   const services = [{
     icon: Monitor,
@@ -88,12 +88,7 @@ export default function ServicesSection() {
                 Entre em contato conosco e descubra como podemos transformar suas ideias 
                 em soluções tecnológicas de impacto.
               </p>
-              <a 
-                href="https://wa.me/5584999212121" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="inline-block px-10 py-4 bg-primary hover:bg-primary-glow text-primary-foreground font-orbitron font-semibold rounded-full glow-border transition-all duration-300 hover:scale-105"
-              >
+              <a href="https://wa.me/5584999212121" target="_blank" rel="noopener noreferrer" className="inline-block px-10 py-4 bg-primary hover:bg-primary-glow text-primary-foreground font-orbitron font-semibold rounded-full glow-border transition-all duration-300 hover:scale-105">
                 Iniciar Projeto
               </a>
             </div>
