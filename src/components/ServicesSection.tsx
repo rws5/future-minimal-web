@@ -12,7 +12,7 @@ export default function ServicesSection() {
     features: ["React Native", "Flutter", "iOS Nativo", "Android Nativo"]
   }, {
     icon: Cloud,
-    title: "Soluções Cloud",
+    title: "Cabeamento Estruturado",
     description: "Infraestrutura em nuvem escalável e segura para seu negócio.",
     features: ["AWS", "Google Cloud", "Azure", "DevOps"]
   }, {
