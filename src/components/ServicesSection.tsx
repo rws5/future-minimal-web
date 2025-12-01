@@ -17,7 +17,7 @@ export default function ServicesSection() {
     features: ["AWS", "Google Cloud", "Azure", "DevOps"]
   }, {
     icon: Database,
-    title: "Banco de Dados",
+    title: "Controle de Acesso",
     description: "Arquitetura e otimização de bancos de dados para alta performance.",
     features: ["PostgreSQL", "MongoDB", "Redis", "Data Analytics"]
   }, {
