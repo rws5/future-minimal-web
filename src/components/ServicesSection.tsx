@@ -13,7 +13,7 @@ export default function ServicesSection() {
   }, {
     icon: Cloud,
     title: "Cabeamento Estruturado",
-    description: "Infraestrutura em nuvem escalável e segura para seu negócio.",
+    description: "Infraestrutura em redes e fibra optica.",
     features: ["AWS", "Google Cloud", "Azure", "DevOps"]
   }, {
     icon: Database,
