@@ -3,7 +3,7 @@ export default function ServicesSection() {
   const services = [{
     icon: Monitor,
     title: "Automação Residencial",
-    description: "Sites e aplicações web modernas, responsivas e otimizadas para performance.",
+    description: "Criação de soluções customizadas para sua residencia, tenha todo o conforto na palma da sua mão.",
     features: ["React & Next.js", "Node.js", "APIs RESTful", "SEO Otimizado"]
   }, {
     icon: Smartphone,
