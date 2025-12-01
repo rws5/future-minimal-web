@@ -2,7 +2,7 @@ import { Monitor, Smartphone, Cloud, Database, Cog, Zap } from 'lucide-react';
 export default function ServicesSection() {
   const services = [{
     icon: Monitor,
-    title: "Desenvolvimento Web",
+    title: "Automação Residencial",
     description: "Sites e aplicações web modernas, responsivas e otimizadas para performance.",
     features: ["React & Next.js", "Node.js", "APIs RESTful", "SEO Otimizado"]
   }, {
