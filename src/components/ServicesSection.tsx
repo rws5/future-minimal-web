@@ -4,7 +4,7 @@ export default function ServicesSection() {
     icon: Monitor,
     title: "Automação Residencial",
     description: "Criação de soluções customizadas para sua residencia, tenha todo o conforto na palma da sua mão.",
-    features: ["Fechaduras", "Câmeras", "Iluminação", "SEO Otimizado"]
+    features: ["Fechaduras", "Câmeras", "Iluminação", "Persianas Automáticas"]
   }, {
     icon: Smartphone,
     title: "Aplicativos Mobile",
