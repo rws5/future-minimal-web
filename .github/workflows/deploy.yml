@@ -27,7 +27,7 @@ jobs:
         run: ls -al dist/
       - name: Deploy SSH Kinghost
       # uses: easingthemes/ssh-deploy@main
-        uses: appleboy/ssh-action@v1
+        uses: appleboy/ssh-action@v0.1.10
         with:
            host: ${{ secrets.FTP_HOST }}
            username: ${{ secrets.FTP_USER }}
