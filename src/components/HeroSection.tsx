@@ -26,7 +26,9 @@ export default function HeroSection() {
           
           {/* CTA Buttons */}
           <div className="fade-in opacity-0 animation-delay-4000 flex flex-col sm:flex-row gap-4 justify-center items-center mt-12">
-            <button className="px-8 py-4 bg-primary hover:bg-primary-glow text-primary-foreground font-orbitron font-semibold rounded-full glow-border transition-all duration-300 hover:scale-105">
+            <button onClick={() => document.querySelector('#solutions')?.scrollIntoView({
+            behavior: 'smooth'
+          })} className="px-8 py-4 bg-primary hover:bg-primary-glow text-primary-foreground font-orbitron font-semibold rounded-full glow-border transition-all duration-300 hover:scale-105">
               Descobrir Soluções
             </button>
             <button onClick={() => document.querySelector('#services')?.scrollIntoView({
