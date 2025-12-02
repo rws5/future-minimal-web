@@ -1,4 +1,4 @@
-import { Home, Smartphone, Cloud, Database, Cog, Zap, Server } from 'lucide-react';
+import { Home, Smartphone, Network, Database, Cog, Zap, Server } from 'lucide-react';
 export default function ServicesSection() {
   const services = [{
     icon: Home,
@@ -11,7 +11,7 @@ export default function ServicesSection() {
     description: "Apps nativos e híbridos para iOS e Android com design intuitivo.",
     features: ["React Native", "Flutter", "iOS Nativo", "Android Nativo"]
   }, {
-    icon: Cloud,
+    icon: Network,
     title: "Cabeamento Estruturado",
     description: "Infraestrutura em redes e fibra optica.",
     features: ["AWS", "Google Cloud", "Azure", "DevOps"]
