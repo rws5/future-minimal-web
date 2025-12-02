@@ -26,15 +26,12 @@ jobs:
       - name: Mostrar arquivos gerados
         run: ls -al dist/
       - name: Deploy SSH Kinghost
-        uses: easingthemes/ssh-deploy@main
-        with:
-          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
-          REMOTE_HOST: ${{ secrets.FTP_HOST }}
-          REMOTE_USER: ${{ secrets.FTP_USER }}
-          TARGET: ${{ secrets.REMOTE_TARGET }}
-          ARGS: "-avz --delete"
-          SOURCE: "dist/" # The local directory to deploy
-          SCRIPT_AFTER: |
-            # Optional: Commands to run on the remote server after deployment
-            echo "Deployment finished. Restarting service..."
-            # Example: sudo systemctl restart your_service
+        uses: appleboy/scp-action@master
+      with:
+        host: ${{ secrets.FTP_HOST }}
+        username: ${{ secrets.FTP_USERNAME }}
+        password: ${{ secrets.FTP_PASSWORD }}
+        port:22
+        source: "dist/*" # Adjust if required
+        target: "wwww/" # Set to your deployment directory (for example /public_html)
+        strip_components: 1 # This ensures that a subdirectory is not created
