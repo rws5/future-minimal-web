@@ -1,7 +1,7 @@
-import { Monitor, Smartphone, Cloud, Database, Cog, Zap, Server } from 'lucide-react';
+import { Home, Smartphone, Cloud, Database, Cog, Zap, Server } from 'lucide-react';
 export default function ServicesSection() {
   const services = [{
-    icon: Monitor,
+    icon: Home,
     title: "Automação Residencial",
     description: "Criação de soluções customizadas para sua residencia, tenha todo o conforto na palma da sua mão.",
     features: ["Fechaduras", "Câmeras", "Iluminação", "Persianas Automáticas"]
