@@ -26,7 +26,8 @@ jobs:
       - name: Mostrar arquivos gerados
         run: ls -al dist/
       - name: Deploy SSH Kinghost
-        uses: easingthemes/ssh-deploy@main
+      # uses: easingthemes/ssh-deploy@main
+        uses: appleboy/ssh-action@v1
         with:
           SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
           REMOTE_HOST: ${{ secrets.FTP_HOST }} # Hostname or IP of your server
