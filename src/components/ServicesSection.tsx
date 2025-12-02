@@ -69,12 +69,6 @@ export default function ServicesSection() {
                     </div>)}
                 </div>
                 
-                {/* CTA */}
-                <div className="mt-8">
-                  <button className="w-full py-3 border border-border/50 hover:border-primary/50 text-foreground font-exo rounded-xl transition-all duration-300 hover:bg-accent/20 hover:shadow-glow/50">
-                    Saiba Mais
-                  </button>
-                </div>
               </div>)}
           </div>
           
