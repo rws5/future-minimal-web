@@ -26,17 +26,15 @@ jobs:
       - name: Mostrar arquivos gerados
         run: ls -al dist/
       - name: Deploy SSH Kinghost
-      # uses: easingthemes/ssh-deploy@main
-        uses: webfactory/ssh-agent@v0.9.0
+        uses: easingthemes/ssh-deploy@main
         with:
-          ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY}}
-      
-      - name: (Finally) Deploy to Kinghot
-        run: |
-          ssh -v ${{ secrets.SSH_OPTS }} ${{ secrets.RIC_USER }}
-          cd www
-          git pull
-          npm ci
-          npm run build
-          npm run start
-          caddy run
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+          REMOTE_HOST: ${{ secrets.FTP_HOST }}
+          REMOTE_USER: ${{ secrets.FTP_USER }}
+          TARGET: ${{ secrets.REMOTE_TARGET }}
+          ARGS: "-avz --delete"
+          SOURCE: "dist/" # The local directory to deploy
+          SCRIPT_AFTER: |
+            # Optional: Commands to run on the remote server after deployment
+            echo "Deployment finished. Restarting service..."
+            # Example: sudo systemctl restart your_service
