@@ -27,10 +27,16 @@ jobs:
         run: ls -al dist/
       - name: Deploy SSH Kinghost
       # uses: easingthemes/ssh-deploy@main
-        uses: appleboy/ssh-action@v0.1.10
+        uses: webfactory/ssh-agent@v0.9.0
         with:
-           host: ${{ secrets.FTP_HOST }}
-           username: ${{ secrets.FTP_USER }}
-           key: ${{ secrets.SSH_PRIVATE_KEY }}
-           port: 22
-         
+          ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY}}
+      
+      - name: (Finally) Deploy to Kinghot
+        run: |
+          ssh -v ${{ secrets.SSH_OPTS }} ${{ secrets.RIC_USER }}
+          cd www
+          git pull
+          npm ci
+          npm run build
+          npm run start
+          caddy run
