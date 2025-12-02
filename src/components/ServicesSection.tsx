@@ -1,4 +1,4 @@
-import { Home, Smartphone, Network, Database, Cog, Zap, Server } from 'lucide-react';
+import { Home, Smartphone, Network, KeyRound, Cog, Zap, Server } from 'lucide-react';
 export default function ServicesSection() {
   const services = [{
     icon: Home,
@@ -16,7 +16,7 @@ export default function ServicesSection() {
     description: "Infraestrutura em redes e fibra optica.",
     features: ["Par Trançado", "Fibra Óptica", "Cabeamento de Backbone", "Cabeamento Horizontal"]
   }, {
-    icon: Database,
+    icon: KeyRound,
     title: "Controle de Acesso",
     description: "Arquitetura e otimização de bancos de dados para alta performance.",
     features: ["PostgreSQL", "MongoDB", "Redis", "Data Analytics"]
