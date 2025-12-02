@@ -14,7 +14,7 @@ export default function ServicesSection() {
     icon: Network,
     title: "Cabeamento Estruturado",
     description: "Infraestrutura em redes e fibra optica.",
-    features: ["Par Trançado", "Google Cloud", "Azure", "DevOps"]
+    features: ["Par Trançado", "Fibra Óptica", "Azure", "DevOps"]
   }, {
     icon: Database,
     title: "Controle de Acesso",
