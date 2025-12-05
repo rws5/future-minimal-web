@@ -19,7 +19,7 @@ export default function ServicesSection() {
     icon: KeyRound,
     title: "Controle de Acesso",
     description: "Controle de acesso facial, biométrico ou por senha. Acesse locais da sua empresa com segurança e auditoria.",
-    features: ["PostgreSQL", "MongoDB", "Redis", "Data Analytics"]
+    features: ["Reconhecimento Facial", "Biométria", "Senha", "Análise de Dados"]
   }, {
     icon: Cog,
     title: "Automação",
