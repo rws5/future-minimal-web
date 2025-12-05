@@ -18,7 +18,7 @@ export default function ServicesSection() {
   }, {
     icon: KeyRound,
     title: "Controle de Acesso",
-    description: "Arquitetura e otimização de bancos de dados para alta performance.",
+    description: "Controle de acesso facial, biométrico ou por senha. Acesse locais da sua empresa com segurança e auditoria.",
     features: ["PostgreSQL", "MongoDB", "Redis", "Data Analytics"]
   }, {
     icon: Cog,
